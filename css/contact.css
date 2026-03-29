@@ -152,7 +152,6 @@
             background-color: #d7cdb0ea;
             border-radius: 0px;
             padding: 50px;
-            height: 750px;
         }
 
         /* -------------body of the courses------------------ */
@@ -312,10 +311,19 @@
             }
 
             /* Welcome box center */
-            .welcome-box {
+            .contact-section{
                 width: 90%;
                 margin: auto;
                 padding: 20px;
+            }
+            .contact{
+                width: 90%;
+                margin: auto;
+                padding: 20px;
+            }
+            .con{
+                flex-direction: column;
+                align-items: center;
             }
 
             /* Reduce big paddings */
