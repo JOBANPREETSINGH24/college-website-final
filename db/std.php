@@ -27,7 +27,10 @@ if (!isset($_SESSION['StudentID'])) {
 
     <link rel="icon" type="image/png" href="images/a1111.png">
 
+
     <link rel="stylesheet" href="../css/std.css?v=2">
+    <link rel="stylesheet" href="../css/std.css?v=2">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>

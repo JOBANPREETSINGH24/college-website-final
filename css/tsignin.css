@@ -274,7 +274,7 @@
             /* Remove underline for <a> */
         }
 
-        .button4:hover:hover {
+        .button4:hover {
             background-color: #e6b800;
             /* Lighter blue on hover */
         }

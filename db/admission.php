@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "INSERT INTO admissions 
     (name, mother_name, father_name, dob, email, phone, school_12th, percentage_12th, passing_year_12th, address, gender, caste, course, course_type)
     
-    VALUES 
+    VALUES
     ('$name', '$mother', '$father', '$dob', '$email', '$phone', '$school', '$percentage', '$year', '$address', '$gender', '$caste', '$course', '$type')";
 
     if (mysqli_query($conn, $sql)) {

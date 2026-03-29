@@ -61,9 +61,9 @@ CREATE TABLE studentuser (
 CREATE TABLE admissions (
     id INT AUTO_INCREMENT PRIMARY KEY,
 
-    name VARCHAR(100) NOT NULL,
-    mother_name VARCHAR(100) NOT NULL,
-    father_name VARCHAR(100) NOT NULL,
+    name VARCHAR(100) NOT NULL CHECK (name REGEXP '^[A-Za-z ]+$'),
+    mother_name VARCHAR(100) NOT NULL CHECK (mother_name REGEXP '^[A-Za-z ]+$'),
+    father_name VARCHAR(100) NOT NULL CHECK (father_name REGEXP '^[A-Za-z ]+$');
 
     dob DATE NOT NULL,
 

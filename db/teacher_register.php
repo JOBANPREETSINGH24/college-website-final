@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
 
-    // 🔒 SECURE VERSION (Recommended)
+    //  SECURE VERSION (Recommended)
     // $password = password_hash($password, PASSWORD_DEFAULT);
 
     // Insert teacher data into database
