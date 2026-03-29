@@ -344,7 +344,7 @@
         html,
         body {
             overflow-x: hidden;
-        }
+        } 
 
         /* Make images responsive */
         img {
@@ -393,7 +393,6 @@
                 margin: auto;
                 padding: 20px;
             }
-
 
             /* Reduce big paddings */
             .container {
