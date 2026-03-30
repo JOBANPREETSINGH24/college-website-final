@@ -69,6 +69,7 @@ CREATE TABLE admissions (
 
     email VARCHAR(150) NOT NULL,
     phone VARCHAR(15) NOT NULL,
+    CONSTRAINT chk_phone CHECK (phone REGEXP '^[6-9][0-9]{9}$')
 
     school_12th VARCHAR(150) NOT NULL,
     percentage_12th DECIMAL(5,2) NOT NULL,

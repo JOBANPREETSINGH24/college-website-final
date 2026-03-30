@@ -23,6 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $course     = $_POST['Subject'] ?? '';
     $type       = $_POST['Type'] ?? '';
 
+    if (!preg_match('/^[6-9][0-9]{9}$/', $phone)) {
+        echo "Invalid phone number!";
+        exit();
+    }
+
     // INSERT QUERY
     $sql = "INSERT INTO admissions 
     (name, mother_name, father_name, dob, email, phone, school_12th, percentage_12th, passing_year_12th, address, gender, caste, course, course_type)
@@ -39,8 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     mysqli_close($conn);
-
 } else {
     echo "No form submitted!";
 }
-?>
